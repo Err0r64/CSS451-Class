@@ -37,7 +37,7 @@ public class SceneNodeControl : MonoBehaviour {
         {
             SceneNode cn = children[i];
             TMP_Dropdown.OptionData d = new TMP_Dropdown.OptionData(space + children[i].transform.name);
-            // Debug.Log("Add: " + space + child.name);
+            // Debug.Log("Add: " + space + child.name); @
             mSelectMenuOptions.Add(d);
             mSelectedTransform.Add(children[i].transform);
             GetChildrenNames(space, children[i]);

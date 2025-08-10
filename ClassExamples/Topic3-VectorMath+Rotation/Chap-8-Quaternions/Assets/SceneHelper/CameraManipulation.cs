@@ -99,7 +99,7 @@ public class CameraManipulation : MonoBehaviour
             //    chaning the following directions must be done in specific sequence!
             //    E.g., NONE of the following order works: 
             //          Forward, Up, Right 
-            //          Forward, Right, Up 
+            //          Forward, Right, Up  @
             //          Right, Forward, Up 
             //          Up, Forward, Right 
             //

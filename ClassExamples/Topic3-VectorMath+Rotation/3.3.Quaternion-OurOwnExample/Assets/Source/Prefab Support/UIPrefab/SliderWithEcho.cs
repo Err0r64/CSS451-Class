@@ -10,7 +10,7 @@ public class SliderWithEcho : MonoBehaviour {
     public Text TheLabel = null;
 
     public delegate void SliderCallbackDelegate(float v);      // defined a new data type
-    private SliderCallbackDelegate mCallBack = null;           // private instance of the data type
+    private SliderCallbackDelegate mCallBack = null;           // private instance of the data type @
 
 
 	// Use this for initialization

@@ -21,7 +21,7 @@ public partial class MainController : MonoBehaviour {
             // Debug.Log("Mouse is down");
             RaycastHit hitInfo = new RaycastHit();
 
-            // now try to hit end points ...
+            // now try to hit end points ... @
             if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, kPlaneLayer))
             {
                 mSelectionPoint.localPosition = hitInfo.point;

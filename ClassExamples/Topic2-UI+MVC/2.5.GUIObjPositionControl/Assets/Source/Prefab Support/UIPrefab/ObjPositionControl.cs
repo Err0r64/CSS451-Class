@@ -41,7 +41,7 @@ public class ObjPositionControl : MonoBehaviour {
         }
     }
 
-    // GUI set object
+    // GUI set object @
     void NewXValue(float nx)
     {
         if (mSelected != null)

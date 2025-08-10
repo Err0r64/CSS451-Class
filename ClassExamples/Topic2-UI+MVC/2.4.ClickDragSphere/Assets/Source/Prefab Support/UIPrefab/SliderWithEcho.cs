@@ -10,7 +10,7 @@ public class SliderWithEcho : MonoBehaviour {
     public TextMeshProUGUI TheEcho = null;
     public TextMeshProUGUI TheLabel = null;
 
-    public delegate void SliderCallbackDelegate(float v);      // defined a new data type
+    public delegate void SliderCallbackDelegate(float v);      // defined a new data type @
     private SliderCallbackDelegate mCallBack = null;           // private instance of the data type
 
 

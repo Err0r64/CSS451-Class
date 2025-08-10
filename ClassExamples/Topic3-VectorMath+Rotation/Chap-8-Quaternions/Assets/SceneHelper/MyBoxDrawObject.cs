@@ -124,7 +124,7 @@ public class MyBoxDrawObject
         Vector3 useSize = Size / 10f; // default plane size is 10
 
         // Faces[0] on Y/Z plane
-        //      Position in X <- Size.X
+        //      Position in X <- Size.X @
         //         Scale in X <- Size.Y 
         //         Scale in Z <- Size.Z 
         Faces[0, 0].Center = Center + new Vector3(halfSize.x, 0, 0);

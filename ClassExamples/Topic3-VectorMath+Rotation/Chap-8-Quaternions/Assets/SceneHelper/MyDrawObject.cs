@@ -102,7 +102,7 @@ public class MyDrawObject {
     protected void SetMyColor(Color c)
     {
         ObjectToDraw.GetComponent<Renderer>().material.color = c;
-    } // What color to draw
+    } // What color to draw @
 
     public Transform transform {
         get { return ObjectToDraw.transform; }

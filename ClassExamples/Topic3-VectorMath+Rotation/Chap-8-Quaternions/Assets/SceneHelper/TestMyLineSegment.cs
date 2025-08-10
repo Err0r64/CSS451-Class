@@ -32,7 +32,7 @@ public class TestMyLineSegment : MonoBehaviour
         aVector.VectorColor = Color.black;
     }
 
-    // Update is called once per frame
+    // Update is called once per frame @
     void Update()
     {
         aLine.VectorFromTo(Src.transform.localPosition, Dst.transform.localPosition);

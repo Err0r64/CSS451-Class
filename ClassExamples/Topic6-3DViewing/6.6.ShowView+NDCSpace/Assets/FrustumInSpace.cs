@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FrustumInSpace : Frustum
+public class FrustumInSpace : Frustum // @
 {
     public Camera mTheView;
     bool ShowInNDC = false;

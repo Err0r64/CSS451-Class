@@ -13,7 +13,7 @@ public class SceneNode : MonoBehaviour {
 	// Use this for initialization
 	protected void Start () {
         InitializeSceneNode();
-        // Debug.Log("PrimitiveList:" + PrimitiveList.Count);
+        // Debug.Log("PrimitiveList:" + PrimitiveList.Count); @
 	}
 	
 	// Update is called once per frame

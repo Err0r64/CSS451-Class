@@ -7,7 +7,7 @@ using UnityEngine.UI; // for GUI elements: Button, Toggle
 public partial class MainController : MonoBehaviour {
 
     // Mouse click selection 
-    // Copied from: http://answers.unity3d.com/questions/411793/selecting-a-game-object-with-a-mouse-click-on-it.html
+    // Copied from: http://answers.unity3d.com/questions/411793/selecting-a-game-object-with-a-mouse-click-on-it.html @
     void ProcessMouseEvents()
     {
         if (Input.GetMouseButtonDown(0)) 

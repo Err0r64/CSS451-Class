@@ -54,7 +54,7 @@ public partial class MyMesh : MonoBehaviour {
         t[0] = 0; t[1] = 3; t[2] = 4;  // 0th triangle
         t[3] = 0; t[4] = 4; t[5] = 1;  // 1st triangle
 
-        t[6] = 1; t[7] = 4; t[8] = 5;  // 2nd triangle
+        t[6] = 1; t[7] = 4; t[8] = 5;  // 2nd triangle @
         t[9] = 1; t[10] = 5; t[11] = 2;  // 3rd triangle
 
         t[12] = 3; t[13] = 6; t[14] = 7;  // 4th triangle

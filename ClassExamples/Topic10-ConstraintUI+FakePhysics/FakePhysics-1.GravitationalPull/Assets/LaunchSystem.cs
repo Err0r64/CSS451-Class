@@ -25,7 +25,7 @@ public class LaunchSystem : MonoBehaviour
             float size = 2f * transform.localScale.y;  // use this as the "strength" of the launcher
 
             MySphere.transform.localPosition = transform.localPosition + size * transform.up;  // put the sphere here
-            MySphere.Velocity = size * LaunchSpeedScale * transform.up; // Follow the current up direction
+            MySphere.Velocity = size * LaunchSpeedScale * transform.up; // Follow the current up direction @
             MySphere.Acceleration = Vector3.zero;  // Initial acceleration follow the current up
             MySphere.GravitationPull = GravitationPull * Vector3.up;
         }

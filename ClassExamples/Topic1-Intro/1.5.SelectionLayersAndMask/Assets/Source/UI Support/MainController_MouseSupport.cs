@@ -10,7 +10,7 @@ public partial class MainController : MonoBehaviour {
 
     int LayerMask = 0; // this is the default
 
-    // Mouse click selection 
+    // Mouse click selection  @
     // Copied from: http://answers.unity3d.com/questions/411793/selecting-a-game-object-with-a-mouse-click-on-it.html
     void LMBSelect()
     {

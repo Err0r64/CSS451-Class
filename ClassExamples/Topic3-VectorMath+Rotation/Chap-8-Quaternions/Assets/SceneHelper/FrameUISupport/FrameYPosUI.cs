@@ -21,7 +21,7 @@ public class FrameYPosUI : MonoBehaviour
     void Update()
     {
         if ((oldPos - transform.localPosition).magnitude > 0.1f) {
-            // derive the rotation
+            // derive the rotation @
             Vector3 nv = (transform.localPosition - origin.localPosition).normalized;
             Vector3 ov = (oldPos - origin.localPosition).normalized;
             Quaternion q = Quaternion.FromToRotation(ov, nv);

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;  // Text Mesh Pro
+using TMPro;  // Text Mesh Pro @
 
 public class SliderWithEcho : MonoBehaviour {
 

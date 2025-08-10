@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Rectangle : MonoBehaviour {
     LineSegment mTop, mBottom, mLeft, mRight;
-    Vector3 mCenter, mLL, mLR, mUL, mUR;  // center and upper/lower left/right
+    Vector3 mCenter, mLL, mLR, mUL, mUR;  // center and upper/lower left/right @
 
     public static Rectangle CreateRectangle()
     {

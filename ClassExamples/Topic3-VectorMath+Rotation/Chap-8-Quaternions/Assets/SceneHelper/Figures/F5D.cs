@@ -10,7 +10,7 @@ public class F5D : MonoBehaviour
 
     #endregion
 
-    // Three positions to define two vectors: P0->P1, and P0->P2
+    // Three positions to define two vectors: P0->P1, and P0->P2 @
     public GameObject P0 = null;   // Position P0
     public GameObject P1 = null;   // Position P1
     

@@ -23,6 +23,6 @@ public class SimpleMotionPhysics : MonoBehaviour
 
         Acceleration += GravitationPull * Time.smoothDeltaTime;        // change in acceleration
         Velocity += Acceleration * Time.smoothDeltaTime;               // change in Velocity
-        transform.localPosition += Velocity * Time.smoothDeltaTime;    // change in position
+        transform.localPosition += Velocity * Time.smoothDeltaTime;    // change in position @
     }
 }

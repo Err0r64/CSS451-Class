@@ -18,7 +18,7 @@ public class MyXZPlane : SingleSidedXZPlane
         } }
 
     private const float kSizeFactor = 0.2f;
-    // Transform: Size
+    // Transform: Size @
     public override float XSize
     {
         set { MyXSize = value * kSizeFactor;

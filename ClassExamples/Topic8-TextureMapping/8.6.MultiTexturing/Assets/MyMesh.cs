@@ -27,7 +27,7 @@ public partial class MyMesh : MonoBehaviour {
         v[7] = new Vector3( 0, 0, 1);
         v[8] = new Vector3( 1, 0, 1);
 
-        // UV
+        // UV @
         uv[0] = new Vector2(0, 0);
         uv[1] = new Vector2(0.5f, 0);
         uv[2] = new Vector2(1, 0);

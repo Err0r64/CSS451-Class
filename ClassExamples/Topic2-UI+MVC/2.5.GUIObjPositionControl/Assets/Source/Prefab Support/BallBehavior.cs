@@ -16,7 +16,7 @@ public class BallBehavior: MonoBehaviour {
         transform.gameObject.layer = 8; // in a different layer
     }
 	
-	// Update is called once per frame
+	// Update is called once per frame @
 	void Update () {
         if (mSpeed == 0f) // no motion 
             return;

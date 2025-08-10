@@ -24,7 +24,7 @@ public abstract class MyIntervalBound : MyDrawObject
     {
         if (IntervalTooSmall(size))
             return;  // does not allow this!
-        MyIntervalHalfSize = size / 2.0f; // default cyliner height is 2
+        MyIntervalHalfSize = size / 2.0f; // default cyliner height is 2 @
         MyIntervalCenterValue = min + MyIntervalHalfSize;
     }
     #endregion 

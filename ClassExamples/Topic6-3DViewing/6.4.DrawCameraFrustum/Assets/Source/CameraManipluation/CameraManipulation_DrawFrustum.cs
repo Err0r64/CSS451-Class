@@ -38,7 +38,7 @@ public partial class CameraManipulation : MonoBehaviour
         Vector3 eye = transform.localPosition;
         Camera c = GetComponent<Camera>();
         float tanFOV = Mathf.Tan(Mathf.Deg2Rad * 0.5f * c.fieldOfView);
-        // near plane dimension
+        // near plane dimension @
         float n = c.nearClipPlane;
         float nearPlaneHeight = 2f * n * tanFOV;
         float nearPlaneWidth = c.aspect * nearPlaneHeight;

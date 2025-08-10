@@ -29,7 +29,7 @@ public class CameraManipulation : MonoBehaviour {
         switch (ComputeMode)
         {
             case LookAtCompute.OurOwnQuatRotation:
-                // Viewing vector is from transform.localPosition to the lookat position
+                // Viewing vector is from transform.localPosition to the lookat position @
                 Vector3 V = LookAtPosition.localPosition - transform.localPosition;
                 Vector3 W = Vector3.Cross(-V, Vector3.up);
                 Vector3 U = Vector3.Cross(W, -V);

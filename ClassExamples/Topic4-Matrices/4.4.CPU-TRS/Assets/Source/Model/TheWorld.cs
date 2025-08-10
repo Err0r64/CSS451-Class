@@ -6,7 +6,7 @@ public class TheWorld : MonoBehaviour  {
     public Transform PlaneXform;      // Xform of the plane
     public GameObject C0, C1, C2, C3; // these are the four corners
                                       // These four objects should have materials with 451-ShaderNoModelXform
-                                      // We will perform ModelXfrom here! (on the CPU side)
+                                      // We will perform ModelXfrom here! (on the CPU side) @
     Vector3[] Corners = {
         new Vector3( 0.5f, 0,  0.5f),
         new Vector3( 0.5f, 0, -0.5f),

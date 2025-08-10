@@ -85,7 +85,7 @@ public class EX_8_4_MyScript : MonoBehaviour
     }
 
     // axis: should be a normalized vector
-    // angle: rotation (in degrees)
+    // angle: rotation (in degrees) @
     Vector4 QFromAngleAxis(float angle, Vector3 axis) {
         float useTheta = angle * Mathf.Deg2Rad * 0.5f;
         float sinTheta = Mathf.Sin(useTheta);

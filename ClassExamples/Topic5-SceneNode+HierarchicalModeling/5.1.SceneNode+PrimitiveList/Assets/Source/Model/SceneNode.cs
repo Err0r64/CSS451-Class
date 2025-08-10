@@ -25,7 +25,7 @@ public class SceneNode : MonoBehaviour {
         mCombinedParentXform = Matrix4x4.identity;
     }
 
-    // This must be called _BEFORE_ each draw!! 
+    // This must be called _BEFORE_ each draw!!  @
     public void CompositeXform(ref Matrix4x4 parentXform)
     {
         Matrix4x4 orgT = Matrix4x4.Translate(NodeOrigin);

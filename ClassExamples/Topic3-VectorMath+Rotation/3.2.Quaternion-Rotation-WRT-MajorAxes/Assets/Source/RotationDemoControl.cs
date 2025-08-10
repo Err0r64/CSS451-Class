@@ -27,7 +27,7 @@ public class RotationDemoControl : MonoBehaviour
         
     }
 
-// NOTE: instead of 
+// NOTE: instead of  @
 //      1. compute q based on the  rotated axes and 
 //      2. Concatenate the q on the left side of localRotation
 //

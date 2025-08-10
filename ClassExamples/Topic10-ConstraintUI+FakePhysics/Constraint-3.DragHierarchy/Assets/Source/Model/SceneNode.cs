@@ -63,7 +63,7 @@ public class SceneNode : MonoBehaviour {
         //      rotation needed is = q * qp 
         // But this sceneNode's rotation is applied _BEFORE_ parent rotation, 
         //     so we need to compute qa where:
-        //      q * qp = qp * qa
+        //      q * qp = qp * qa @
         // multiply both side by qp-inverse
         //      qp-Inv * q * qp = qa
         // So ...

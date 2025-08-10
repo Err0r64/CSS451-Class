@@ -49,7 +49,7 @@ public class MyMesh : MonoBehaviour {
         t[18] = 4; t[19] = 7; t[20] = 8;  // 6th triangle
         t[21] = 4; t[22] = 8; t[23] = 5;  // 7th triangle
 
-        theMesh.vertices = v; //  new Vector3[3];
+        theMesh.vertices = v; //  new Vector3[3]; @
         theMesh.triangles = t; //  new int[3];
         theMesh.normals = n;
     }

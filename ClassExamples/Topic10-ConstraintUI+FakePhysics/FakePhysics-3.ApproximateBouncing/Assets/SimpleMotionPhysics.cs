@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SimpleMotionPhysics : MonoBehaviour
 {
-    public Vector3 GravitationPull = -Vector3.up;  // default is dropping downwards
+    public Vector3 GravitationPull = -Vector3.up;  // default is dropping downwards @
     public Vector3 Acceleration = Vector3.zero;  // default is dropping downwards
     public Vector3 Velocity = Vector3.zero;
 

@@ -50,7 +50,7 @@ public class CameraManipAsChild : MonoBehaviour
         ct.localPosition = new Vector3(0, 0, -mViewDistant);  // place the camera along the z-axis
 
         // Now rotate myself to orbit the child
-        transform.localRotation = Quaternion.AngleAxis(mYDegree, Vector3.right);  // rotate about the X-axis
+        transform.localRotation = Quaternion.AngleAxis(mYDegree, Vector3.right);  // rotate about the X-axis @
     }
 
     Transform GetCameraXform() { return transform.GetChild(0); }

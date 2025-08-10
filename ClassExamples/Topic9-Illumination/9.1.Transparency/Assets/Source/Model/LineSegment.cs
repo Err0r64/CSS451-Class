@@ -30,7 +30,7 @@ public class LineSegment : MonoBehaviour {
         transform.localScale = s;
     }
 
-    // Getters
+    // Getters @
     public float GetLineLength() { return mL; }
     public Vector3 GetLineDir() { return mV;  }
     public Vector3 GetStartPos() {  return mP1; }

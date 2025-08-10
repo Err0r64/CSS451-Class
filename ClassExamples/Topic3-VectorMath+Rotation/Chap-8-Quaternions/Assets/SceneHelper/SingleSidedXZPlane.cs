@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SingleSidedXZPlane : MyDrawObject
 {
-    // constructor
+    // constructor @
     public SingleSidedXZPlane() : base("SemiTransparentXZPlane")
     {
     }

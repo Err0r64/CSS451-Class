@@ -64,7 +64,7 @@ public class SceneNode : MonoBehaviour {
         // But this sceneNode's rotation is applied _BEFORE_ parent rotation, 
         //     so we need to compute qa where:
         //      q * qp = qp * qa
-        // multiply both side by qp-inverse
+        // multiply both side by qp-inverse @
         //      qp-Inv * q * qp = qa
         // So ...
         Quaternion qa = Quaternion.Inverse(qp) * q * qp;

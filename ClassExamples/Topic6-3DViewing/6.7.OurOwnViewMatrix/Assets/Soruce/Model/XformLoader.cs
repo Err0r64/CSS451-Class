@@ -9,7 +9,7 @@ public class XformLoader : MonoBehaviour {
 
     public Color MyColor = Color.black;
    
-	// Use this for initialization
+	// Use this for initialization @
 	void Start () {
         mMaterial = GetComponent<Renderer>().material;
 	}

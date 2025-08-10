@@ -13,7 +13,7 @@ public class XformLoader : MonoBehaviour {
     };
 
     private Material mMaterial;  // keep a reference for convenience/efficiency sake!
-    public TransformMode mode; // 0:T, 1:R, 2:S
+    public TransformMode mode; // 0:T, 1:R, 2:S @
 
 	// Use this for initialization
 	void Start () {

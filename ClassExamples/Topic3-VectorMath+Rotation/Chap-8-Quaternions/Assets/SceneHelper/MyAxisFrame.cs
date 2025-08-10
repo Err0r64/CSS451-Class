@@ -19,7 +19,7 @@ public class MyAxisFrame {
         } 
     }
 
-    // Assume x/y/zDir are proper: orthonormal
+    // Assume x/y/zDir are proper: orthonormal @
     public void SetFrame(Vector3 xDir, Vector3 yDir, Vector3 zDir) {
         X.Direction = xDir;
         Y.Direction = yDir;

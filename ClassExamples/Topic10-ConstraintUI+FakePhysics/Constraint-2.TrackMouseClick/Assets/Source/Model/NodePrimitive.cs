@@ -6,7 +6,7 @@ public class NodePrimitive: MonoBehaviour {
     public Color MyColor = new Color(0.1f, 0.1f, 0.2f, 1.0f);
     public Vector3 Pivot;
 
-	// Use this for initialization
+	// Use this for initialization @
 	void Start () {
     }
 

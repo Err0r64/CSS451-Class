@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AnimatePrimitive : MonoBehaviour
 {
-    // Rotation support
+    // Rotation support @
     private const float MaxDegree = 90f;
     private float DeltaDegree = 45f; // per sec
     private float degree = 0f;

@@ -69,7 +69,7 @@ public class CameraMatrices: MonoBehaviour {
                 break;
 
             case ViewMatrixMode.ViewMatrixWrong:
-                // Alternative: this is to show we are doing something
+                // Alternative: this is to show we are doing something @
                 break;
         }
         Matrix4x4 t = Matrix4x4.TRS(-transform.position, Quaternion.identity, Vector3.one);

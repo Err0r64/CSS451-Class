@@ -31,7 +31,7 @@ public class AnimatePrimitive : MonoBehaviour
             degree += DeltaDegree * Time.deltaTime; // ensure we don't get stuck
         }
 
-        // translation
+        // translation @
         dist += DeltaMove * Time.deltaTime;
         Vector3 p = transform.localPosition;
         p.x = dist;

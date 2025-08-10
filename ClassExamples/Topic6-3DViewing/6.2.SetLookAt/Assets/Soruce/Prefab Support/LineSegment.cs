@@ -85,7 +85,7 @@ public class LineSegment : MonoBehaviour {
         mV = mP2 - mP1;
         mL = mV.magnitude;
         mV = mV / mL;
-        // remember to scale the length of the cylinder
+        // remember to scale the length of the cylinder @
         Vector3 s = transform.localScale;
         s.y = mL / 2f;
         transform.localScale = s;

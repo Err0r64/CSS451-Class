@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEditor;
 
-public class AxisFrame
+public class AxisFrame // @
 {
     static private GameObject TheFrame = GameObject.Find("AxisFrame");
 

@@ -61,7 +61,7 @@ public class LineSegment : MonoBehaviour {
         ptOnLine = Vector3.zero;
 
         if ((h < 0) || (h > mL)) { 
-            d = -1; // not valid
+            d = -1; // not valid @
         } else
         {
             d = Mathf.Sqrt(va.sqrMagnitude - h * h);

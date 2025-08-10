@@ -14,7 +14,7 @@ public class SliderWithEcho : MonoBehaviour {
     private SliderCallbackDelegate mCallBack = null;           // private instance of the data type
 
 
-	// Use this for initialization
+	// Use this for initialization @
 	void Start () {
         Debug.Assert(TheSlider != null);
         Debug.Assert(TheEcho != null);

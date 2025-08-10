@@ -66,7 +66,7 @@ public class SimpleMotionPhysics : MonoBehaviour
                 // Decompose into n-direction and the rest
                 float nSize = Vector3.Dot(n, Velocity);
                 Vector3 nDir = nSize * n;
-                Vector3 tDir = Velocity - nDir; // t as in direction that is tangential to the normal
+                Vector3 tDir = Velocity - nDir; // t as in direction that is tangential to the normal @
                 // 
                 Velocity = Elasticity * nDir + (1f - Friction) * tDir;
 #endif

@@ -29,7 +29,7 @@ public class TheWorld : MonoBehaviour  {
 
     private void Update()
     {
-        //TheRoot.OrbitAroundWorldY(0.4f); // degree
+        //TheRoot.OrbitAroundWorldY(0.4f); // degree @
         UpdateHierarchy();
 
         if (TrackTarget) {            

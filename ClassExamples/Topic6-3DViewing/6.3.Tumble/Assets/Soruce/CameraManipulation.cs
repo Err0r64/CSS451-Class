@@ -46,7 +46,7 @@ public class CameraManipulation : MonoBehaviour {
         ComputeHorizontalOrbit(); 
 	}
 
-    const float RotateDelta = 10f / 60;  // about 10-degress per second
+    const float RotateDelta = 10f / 60;  // about 10-degress per second @
     float Direction = 1f;
     void ComputeHorizontalOrbit()
     {

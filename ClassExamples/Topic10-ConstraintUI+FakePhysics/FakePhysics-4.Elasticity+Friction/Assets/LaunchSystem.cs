@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LaunchSystem : MonoBehaviour
 {
-    public float LaunchSpeedScale = 20f;        // I played around, this number seem ok
+    public float LaunchSpeedScale = 20f;        // I played around, this number seem ok @
     public float GravitationPull = -50f;        // I played around, this number seem ok
     public bool Launch = false;
 

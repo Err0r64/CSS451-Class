@@ -32,7 +32,7 @@ public class SliderWithEcho : MonoBehaviour {
 	void SliderValueChange(float v)
     {
         TheEcho.text = v.ToString("0.0000");
-        // Debug.Log("SliderValueChange: " + v);
+        // Debug.Log("SliderValueChange: " + v); @
         if (mCallBack != null)
             mCallBack(v);
     }

@@ -12,7 +12,7 @@ public partial class MainController : MonoBehaviour {
         GameObject selectedObj;
         Vector3 hitPoint;
         if (EventSystem.current.IsPointerOverGameObject())
-            return;  // do not attempt to do anything if over UI elements
+            return;  // do not attempt to do anything if over UI elements @
             
         if (Input.GetMouseButtonDown(0)) // Click event
         {

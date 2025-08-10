@@ -29,7 +29,7 @@ public class BounceUpAndDown: MonoBehaviour {
                 obj.transform.position = cp;
             }
 
-            // show how to access components which may or may not be there
+            // show how to access components which may or may not be there @
             Renderer r = GetComponent<Renderer>();
             if (r != null)
             {

@@ -78,7 +78,7 @@ public class MyBoxBound : MyBoxDrawObject
     {
         base.ResetBoxColor();
     }   // Reset box color to default (transparent white)
-    public void SetBoxColor(Color c)     // Sets the color for the box
+    public void SetBoxColor(Color c)     // Sets the color for the box @
     {
         SetPlaneColor(0, c);
         SetPlaneColor(1, c);

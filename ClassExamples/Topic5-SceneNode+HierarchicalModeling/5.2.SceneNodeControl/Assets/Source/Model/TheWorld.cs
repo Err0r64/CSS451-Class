@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [ExecuteInEditMode]
-public class TheWorld : MonoBehaviour  {
+public class TheWorld : MonoBehaviour  { // @
 
     public List<SceneNode> TheRoots;
 

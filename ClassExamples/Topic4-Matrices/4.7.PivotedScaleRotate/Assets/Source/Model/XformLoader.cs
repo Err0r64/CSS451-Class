@@ -29,7 +29,7 @@ public class XformLoader : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        // Pivot is an offset in the ObjectSpace
+        // Pivot is an offset in the ObjectSpace @
         ShowPivotPosition.localPosition = transform.localPosition + PivotPosition;
 
         IncrementXform();

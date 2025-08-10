@@ -28,7 +28,7 @@ public class LineSegment : MonoBehaviour {
 
 	}
 
-    // setters
+    // setters @
     public void SetPoints(Vector3 p1, Vector3 p2) {
         mP1 = p1;
         mP2 = p2;

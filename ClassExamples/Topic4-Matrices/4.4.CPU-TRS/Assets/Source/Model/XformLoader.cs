@@ -30,7 +30,7 @@ public class XformLoader : MonoBehaviour {
             case TransformMode.Translation:
                 Vector3 p = transform.localPosition;
                 m[12] = p.x;    // col-3, row-0
-                m[13] = p.y;    // col-3, row-1
+                m[13] = p.y;    // col-3, row-1 @
                 m[14] = p.z;    // col-3, row-2
                 break;
             case TransformMode.Scale:

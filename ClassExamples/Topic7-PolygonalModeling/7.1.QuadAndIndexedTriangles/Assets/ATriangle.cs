@@ -17,7 +17,7 @@ public class ATriangle : MonoBehaviour {
 
         theMesh.Clear();    // delete whatever is there!!
 
-        v = new Vector3[3];     // Allocate new ones!
+        v = new Vector3[3];     // Allocate new ones! @
         t = new int[3];
 
 

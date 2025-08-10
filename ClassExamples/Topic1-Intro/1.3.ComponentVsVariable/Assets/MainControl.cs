@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class MainControl : MonoBehaviour {
 
-    // Parmeters to control MoveInX
+    // Parmeters to control MoveInX @
     public MoveInX mScript;
     private int count = 0;
 

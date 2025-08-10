@@ -7,7 +7,7 @@ public class EX_8_2_MyScript : MonoBehaviour
     public GameObject Pi = null;    // initial position
 
     public GameObject Pr = null;    // rotated position
-    public GameObject A = null;   // The axis of rotation
+    public GameObject A = null;   // The axis of rotation @
     public float Theta = 30.0f;
     public bool DrawQuaternion = true;
 

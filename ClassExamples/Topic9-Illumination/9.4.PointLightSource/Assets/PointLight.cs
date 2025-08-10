@@ -12,7 +12,7 @@ public class PointLight : MonoBehaviour {
     public bool ShowLightRanges = false;
 
 
-	// Use this for initialization
+	// Use this for initialization @
 	void Start () {
 
     }

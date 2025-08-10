@@ -30,7 +30,7 @@ public class XformLoader : MonoBehaviour {
         tm[13] = p.y;    // col-3, row-1
         tm[14] = p.z;    // col-3, row-2
 
-        Matrix4x4 cm = Matrix4x4.identity; // concatenated result
+        Matrix4x4 cm = Matrix4x4.identity; // concatenated result @
 
         switch (mode)
         {

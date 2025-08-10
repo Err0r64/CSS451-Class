@@ -18,7 +18,7 @@ public class EX_8_5_MyScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Assert(Po != null);   // Verify proper setting in the editor
+        Debug.Assert(Po != null);   // Verify proper setting in the editor @
         Debug.Assert(Px != null);
         Debug.Assert(Pz != null);
         Debug.Assert(AlignX != null);

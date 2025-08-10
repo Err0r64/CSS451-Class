@@ -46,7 +46,7 @@ public class CameraMatrices: MonoBehaviour {
                 r.SetColumn(0, transform.right);
                 r.SetColumn(1, transform.up);
                 r.SetColumn(2, -transform.forward);
-                r = r.inverse;  // we need the inverse of this matrix
+                r = r.inverse;  // we need the inverse of this matrix @
                 break;
 
             case ViewMatrixMode.SetMatrixRow:

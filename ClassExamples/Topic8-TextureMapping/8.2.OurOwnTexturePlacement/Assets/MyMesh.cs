@@ -11,7 +11,7 @@ public partial class MyMesh : MonoBehaviour {
 
         Vector3[] v = new Vector3[9];   // 2x2 mesh needs 3x3 vertices
         int[] t = new int[8*3];         // Number of triangles: 2x2 mesh and 2x triangles on each mesh-unit
-        Vector3[] n = new Vector3[9];   // MUST be the same as number of vertices
+        Vector3[] n = new Vector3[9];   // MUST be the same as number of vertices @
         Vector2[] uv = new Vector2[9];
 
 

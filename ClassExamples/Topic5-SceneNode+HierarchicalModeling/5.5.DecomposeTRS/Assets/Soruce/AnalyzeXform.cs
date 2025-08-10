@@ -38,7 +38,7 @@ public class AnalyzeXform : MonoBehaviour {
             Matrix4x4 myTRS = Matrix4x4.TRS(transform.localPosition, transform.localRotation, transform.localScale);
             Matrix4x4 concatMatrix = parentTRS * myTRS;
 
-            // now decomposite and get each components
+            // now decomposite and get each components @
             WorldTransform.localPosition = concatMatrix.GetColumn(3);
             Vector3 x = concatMatrix.GetColumn(0);
             Vector3 y = concatMatrix.GetColumn(1);

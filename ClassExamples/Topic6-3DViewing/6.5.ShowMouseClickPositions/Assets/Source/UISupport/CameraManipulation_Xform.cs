@@ -3,7 +3,7 @@ using System.Collections;
 
 public partial class CameraManipulation : MonoBehaviour
 {
-    GameObject[] mIndicators; // spheres to show the mouse click position
+    GameObject[] mIndicators; // spheres to show the mouse click position @
     LineSegment mSelectionRay;
     void InitShowMouseClick()
     {

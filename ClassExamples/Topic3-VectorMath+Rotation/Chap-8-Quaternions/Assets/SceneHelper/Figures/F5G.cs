@@ -16,7 +16,7 @@ public class F5G : MonoBehaviour
     public GameObject Pb = null;   // Position Pb
 
 
-    // Start is called before the first frame update
+    // Start is called before the first frame update @
     void Start()
     {
         Debug.Assert(P0 != null);   // Verify proper setting in the editor

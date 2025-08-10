@@ -25,7 +25,7 @@ public class TestMyVector : MonoBehaviour
         cutVector = new MyVector();
     }
 
-    // Update is called once per frame
+    // Update is called once per frame @
     void Update()
     {
         aVector.DrawVector = ShowA;

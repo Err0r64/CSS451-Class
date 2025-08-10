@@ -9,7 +9,7 @@ public class LineSegment : MonoBehaviour {
     protected Vector3 mP2 = Vector3.one;
 
     protected Vector3 mV;  // direction of the line, normalized
-    protected float mL;   // Len of the line segment
+    protected float mL;   // Len of the line segment @
 
 	// Use this for initialization
 	void Start () {

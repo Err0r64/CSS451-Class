@@ -33,7 +33,7 @@ public class TheWorld : MonoBehaviour  {
         UpdateHierarchy();
 
         if (TrackTarget) {            
-            // do root
+            // do root @
             if (RotateRoot) {    
                 Vector3 rootDir = FrontTip.localPosition - RootOrg.localPosition;
                 TheRoot.RotateUpTowardsBy(rootDir, RootDelta);

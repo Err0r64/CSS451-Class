@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScalableSphere: MonoBehaviour {
+public class ScalableSphere: MonoBehaviour { // @
 
     const float kSize = 3f;
     public void SetSpherePosition(Vector3 p)

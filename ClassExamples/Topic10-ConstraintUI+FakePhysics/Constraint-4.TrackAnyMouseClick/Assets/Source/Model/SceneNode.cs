@@ -77,7 +77,7 @@ public class SceneNode : MonoBehaviour {
         // Rotate pUp towards dir, by delta-portion of the angle
         Vector3 rAxis = Vector3.Cross(pUp, dir);  // rotation axis
         float rotDegree = Mathf.Acos(Vector3.Dot(pUp, dir.normalized)) * Mathf.Rad2Deg; // angle to rotate
-        Quaternion q = Quaternion.AngleAxis(delta*rotDegree, rAxis);  // rotate by delta of the actual angle
+        Quaternion q = Quaternion.AngleAxis(delta*rotDegree, rAxis);  // rotate by delta of the actual angle @
         
         // qp is parent rotation
         Quaternion qp = Quaternion.LookRotation(mParentXform.GetColumn(2), mParentXform.GetColumn(1));

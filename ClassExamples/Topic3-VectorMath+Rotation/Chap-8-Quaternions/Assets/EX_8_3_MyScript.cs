@@ -12,7 +12,7 @@ public class EX_8_3_MyScript : MonoBehaviour
     };
 
     public GameObject P1 = null;   // The first position
-    public GameObject P2 = null;    // The second position
+    public GameObject P2 = null;    // The second position @
     public GameObject Pc = null;
 
     public bool DrawQuaternion = true;

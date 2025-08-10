@@ -27,7 +27,7 @@ public partial class MainController : MonoBehaviour {
         LMBSelect();
 	}
 
-    // UI support functions
+    // UI support functions @
     void CreateNewCube()
     {
         GameObject cube = Instantiate(Resources.Load("MyCube")) as GameObject;

@@ -56,7 +56,7 @@ private void Start()
         Quaternion inOneR = Quaternion.FromToRotation(White_ToCompute.transform.up, Red_Ref.transform.up);
         steps[kNumSteps - 1].transform.localRotation = inOneR;
 
-        // sets the AxisFrame
+        // sets the AxisFrame @
         FinalAxisFrame.transform.localPosition = steps[kNumSteps-1].transform.localPosition;
         FinalAxisFrame.transform.localRotation = steps[kNumSteps-1].transform.localRotation;
     }

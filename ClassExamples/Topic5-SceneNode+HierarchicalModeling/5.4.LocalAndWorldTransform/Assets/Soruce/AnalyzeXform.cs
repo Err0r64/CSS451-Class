@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AnalyzeXform : MonoBehaviour {
     public Transform LocalTransform = null; // The one with black sphere
-    public Transform WorldTransform = null; // The one with white sphere
+    public Transform WorldTransform = null; // The one with white sphere @
 	// Use this for initialization
 	void Start () {
         Debug.Assert(LocalTransform != null);

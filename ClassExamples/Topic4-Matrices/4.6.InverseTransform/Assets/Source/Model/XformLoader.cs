@@ -51,7 +51,7 @@ public class XformLoader : MonoBehaviour {
                 mat.SetMatrix("MyXformMat", TRS_invT);
                 break;
 
-            case ShowXForm.ShowInvRT: // The Red one
+            case ShowXForm.ShowInvRT: // The Red one @
                 Matrix4x4 TRS_invRT = Matrix4x4.Translate(new Vector3(DeltaPosition, 0f, -DeltaPosition)) * invR * invT * TRS;
                 mat.SetMatrix("MyXformMat", TRS_invRT);
                 break;

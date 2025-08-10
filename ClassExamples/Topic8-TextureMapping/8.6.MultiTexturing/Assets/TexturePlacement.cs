@@ -7,7 +7,7 @@ public class TexturePlacement : MonoBehaviour {
     public Vector2 Offset = Vector2.zero;
     public Vector2 Scale = Vector2.one;
 	
-	// Update is called once per frame
+	// Update is called once per frame @
 	void Update () {
         GetComponent<Renderer>().material.SetFloat("MyTexOffset_X", Offset.x);
         GetComponent<Renderer>().material.SetFloat("MyTexOffset_Y", Offset.y);

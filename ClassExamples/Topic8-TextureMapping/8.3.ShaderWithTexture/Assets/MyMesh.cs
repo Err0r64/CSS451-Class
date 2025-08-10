@@ -73,7 +73,7 @@ public partial class MyMesh : MonoBehaviour {
         InitNormals(v, n);
     }
 
-    // Update is called once per frame
+    // Update is called once per frame @
     void Update () {
         Mesh theMesh = GetComponent<MeshFilter>().mesh;
         Vector3[] v = theMesh.vertices;

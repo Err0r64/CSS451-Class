@@ -14,7 +14,7 @@ public class XformLoader : MonoBehaviour {
         None = 4
     };
 
-    private Material mMaterial;  // keep a reference for convenience/efficiency sake!
+    private Material mMaterial;  // keep a reference for convenience/efficiency sake! @
     public TransformMode mode; // 0:T, 1:R, 2:S
 
 	// Use this for initialization

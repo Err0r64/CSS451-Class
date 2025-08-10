@@ -31,7 +31,7 @@ public partial class MainController : MonoBehaviour {
         mPointToTrack.localPosition = Vector3.zero;
 
         if (h < 0) { 
-            d = -1; // not valid
+            d = -1; // not valid @
         } else
         {
             d = Mathf.Sqrt(va.sqrMagnitude - h * h);

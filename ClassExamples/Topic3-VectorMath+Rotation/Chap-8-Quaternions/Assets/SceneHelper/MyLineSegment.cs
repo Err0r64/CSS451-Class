@@ -17,7 +17,7 @@ public class MyLineSegment: MyVector
         DisablePointer();
         #endregion
 
-    }         // Constructor
+    }         // Constructor @
 
     public float LineLength
     {

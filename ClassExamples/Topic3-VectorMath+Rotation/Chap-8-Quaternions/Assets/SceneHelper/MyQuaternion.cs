@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MyQuaternion
+public class MyQuaternion // @
 {
     private MyVector mAxis;
     private MyXZPlane mPlaneOfRotation;

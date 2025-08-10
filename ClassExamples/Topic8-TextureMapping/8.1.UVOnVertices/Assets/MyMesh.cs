@@ -60,7 +60,7 @@ public partial class MyMesh : MonoBehaviour {
         t[12] = 3; t[13] = 6; t[14] = 7;  // 4th triangle
         t[15] = 3; t[16] = 7; t[17] = 4;  // 5th triangle
 
-        t[18] = 4; t[19] = 7; t[20] = 8;  // 6th triangle
+        t[18] = 4; t[19] = 7; t[20] = 8;  // 6th triangle @
         t[21] = 4; t[22] = 8; t[23] = 5;  // 7th triangle
 
         theMesh.vertices = v; //  new Vector3[3];

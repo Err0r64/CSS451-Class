@@ -68,7 +68,7 @@ public class EX_8_1_MyScript : MonoBehaviour
         return r;
     }
 
-    // Rotate p based on the quaternion q
+    // Rotate p based on the quaternion q @
     Vector3 QRotation(Vector4 qr, Vector3 p) {
         Vector4 pq = new Vector4(p.x, p.y, p.z, 0);
         Vector4 qr_inv = new Vector4(-qr.x, -qr.y, -qr.z, qr.w); 

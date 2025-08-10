@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-    // Assume hanging on a cylinder
+    // Assume hanging on a cylinder @
 public class LineSegment : MonoBehaviour {
     protected Vector3 mP1 = Vector3.zero;
     protected Vector3 mP2 = Vector3.one;

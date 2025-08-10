@@ -23,7 +23,7 @@ public class XformLoader : MonoBehaviour {
         m = pm * m * ipm;    
 
         mMaterial.SetMatrix("MyXformMat", m);
-        // "MyXformMat" must be exactly the same string as what is defined in the shader of the material
+        // "MyXformMat" must be exactly the same string as what is defined in the shader of the material @
         mMaterial.SetColor("MyColor", MyColor);
 	}
 }

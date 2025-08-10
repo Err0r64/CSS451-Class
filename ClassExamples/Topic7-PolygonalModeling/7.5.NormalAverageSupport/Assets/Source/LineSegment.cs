@@ -87,7 +87,7 @@ public class LineSegment : MonoBehaviour {
         Quaternion q = Quaternion.FromToRotation(Vector3.up, mV);
         transform.localRotation = q;
 #endif
-        // 2. place in the proper place, remembering to shift by Y
+        // 2. place in the proper place, remembering to shift by Y @
         transform.localPosition = mP1 + mV * (mL / 2f);
     }
 }

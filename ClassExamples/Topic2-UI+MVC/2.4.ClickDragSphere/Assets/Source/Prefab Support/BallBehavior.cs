@@ -45,7 +45,7 @@ public class BallBehavior: MonoBehaviour {
     public void EnableMotion()
     {
         float size = transform.localScale.x; // assume x,y,z are the same
-        mSpeed = size / 30f;  // movement speed is porportional to sphere size
+        mSpeed = size / 30f;  // movement speed is porportional to sphere size @
     }
 
     public void SetAsSelected()

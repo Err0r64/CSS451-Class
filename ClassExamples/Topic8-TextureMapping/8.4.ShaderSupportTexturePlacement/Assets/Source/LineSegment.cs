@@ -71,7 +71,7 @@ public class LineSegment : MonoBehaviour {
 #if OurOwnRotation
         // form is transform.up;
         // To is current mV
-        // make sure the two is not already aligned
+        // make sure the two is not already aligned @
         Vector3 up = transform.TransformDirection(Vector3.up);
         // exactly the same as: 
         //      up = transform.up;

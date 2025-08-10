@@ -23,7 +23,7 @@ public class LineSegment : MonoBehaviour {
         return l;
     }
 
-    // Use this for initialization
+    // Use this for initialization @
     void Start () {
         GetComponent<Renderer>().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
         ComputeLineDetails();

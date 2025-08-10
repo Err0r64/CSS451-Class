@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LoadLight : MonoBehaviour {
+public class LoadLight : MonoBehaviour { // @
     public Transform LightPosition;
 
 	void Update()

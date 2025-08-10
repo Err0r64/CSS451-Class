@@ -6,7 +6,7 @@ using UnityEngine.UI; // for GUI elements: Button, Toggle
 
 public partial class MainController : MonoBehaviour {
 
-    // reference to all UI elements in the Canvas
+    // reference to all UI elements in the Canvas @
     public Camera MainCamera = null;
     public TheWorld TheWorld = null;
     

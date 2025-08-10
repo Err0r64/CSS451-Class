@@ -56,7 +56,7 @@ public class LineSegment : MonoBehaviour {
         return d;
     }
 
-    // Compute the line direction/length and move the cylinder to the proper place
+    // Compute the line direction/length and move the cylinder to the proper place @
     protected void ComputeLineDetails()
     {
         mV = mP2 - mP1;

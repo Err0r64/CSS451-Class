@@ -47,7 +47,7 @@ public partial class CameraManipulation : MonoBehaviour
     bool MouseInCameraViewport()
     {
         Vector3 viewportPt;
-        Camera c = GetComponent<Camera>(); // assume this exists!
+        Camera c = GetComponent<Camera>(); // assume this exists! @
         if (c == Camera.main) // check to see if mouse in some other camera's viewport
         {
             // Main camera has the lowest priority in terms of mouse click response

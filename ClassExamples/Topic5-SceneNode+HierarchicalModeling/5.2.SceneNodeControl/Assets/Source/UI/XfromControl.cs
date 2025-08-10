@@ -93,7 +93,7 @@ public class XfromControl : MonoBehaviour {
             // if not in rotation, next two lines of work would be wasterd
             float dz = v - mPreviousSliderValues.z;
             mPreviousSliderValues.z = v;
-        Quaternion q = Quaternion.AngleAxis(dz, Vector3.forward); // **- Please read the notes at the end
+        Quaternion q = Quaternion.AngleAxis(dz, Vector3.forward); // **- Please read the notes at the end @
         p.z = v;
         UISetObjectXform(ref p, ref q);
     }

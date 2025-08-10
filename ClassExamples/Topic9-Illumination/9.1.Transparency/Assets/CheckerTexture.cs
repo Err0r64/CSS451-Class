@@ -10,7 +10,7 @@ public class CheckerTexture : MonoBehaviour {
     public float VRepeat = 2;
     public Color Color2 = Color.white;
 
-    // Use this for initialization
+    // Use this for initialization @
     void Start () {
 		
 	}

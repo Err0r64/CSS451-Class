@@ -50,7 +50,7 @@ public partial class MyMesh : MonoBehaviour {
         n[7] = new Vector3(0, 1, 0);
         n[8] = new Vector3(0, 1, 0);
 
-        // First triangle
+        // First triangle @
         t[0] = 0; t[1] = 3; t[2] = 4;  // 0th triangle
         t[3] = 0; t[4] = 4; t[5] = 1;  // 1st triangle
 

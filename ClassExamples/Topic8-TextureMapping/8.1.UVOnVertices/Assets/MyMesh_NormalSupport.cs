@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public partial class MyMesh : MonoBehaviour {
+public partial class MyMesh : MonoBehaviour { // @
     LineSegment[] mNormals;
 
     void InitNormals(Vector3[] v, Vector3[] n)

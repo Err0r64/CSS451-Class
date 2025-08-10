@@ -11,7 +11,7 @@ public class MainController : MonoBehaviour {
     public Button DeleteSelectedButton = null;
     public Toggle ShowSphereToggle = null;
 
-    // information that will be changed by user action (identify selected)
+    // information that will be changed by user action (identify selected) @
     private GameObject mSelectedObject = null;
     private GameObject mTheSphere = null;
 

@@ -52,7 +52,7 @@ public partial class Frustum : MonoBehaviour
     virtual protected void UpdateFrustum() {
         Vector3 eye = eyePos();
         float tanFOV = Mathf.Tan(Mathf.Deg2Rad * 0.5f * mTheCamera.fieldOfView);
-        // near plane dimension
+        // near plane dimension @
         float n = mTheCamera.nearClipPlane;
         float nearPlaneHeight = 2f * n * tanFOV;
         float nearPlaneWidth = mTheCamera.aspect * nearPlaneHeight;

@@ -28,7 +28,7 @@ public partial class MainController : MonoBehaviour {
             {
                 TheWorld.ResizeCreatedTo(hitPoint);
             }   
-        } else if (Input.GetMouseButtonUp(0)) // Mouse Release
+        } else if (Input.GetMouseButtonUp(0)) // Mouse Release @
         {
             TheWorld.EnableCreatedMotion();
         }

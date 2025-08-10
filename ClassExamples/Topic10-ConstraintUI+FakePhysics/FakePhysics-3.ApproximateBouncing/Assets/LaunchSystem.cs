@@ -18,7 +18,7 @@ public class LaunchSystem : MonoBehaviour
     {
         if (Launch)
         {
-            float size = 2f * transform.localScale.y;  // use this as the "strenth" of the launcher
+            float size = 2f * transform.localScale.y;  // use this as the "strenth" of the launcher @
 
             GameObject g = GameObject.CreatePrimitive(PrimitiveType.Sphere);
             SimpleMotionPhysics s = g.AddComponent<SimpleMotionPhysics>();

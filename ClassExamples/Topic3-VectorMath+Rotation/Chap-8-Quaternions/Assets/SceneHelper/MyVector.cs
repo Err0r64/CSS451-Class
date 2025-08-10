@@ -91,7 +91,7 @@ public class MyVector
         DrawVectorComponents = false;
         UpdateForDraw();
         #endregion
-    }         // Constructor
+    }         // Constructor @
 
     public float Magnitude
     {

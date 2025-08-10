@@ -7,7 +7,7 @@ public partial class MyMesh : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         Mesh theMesh = GetComponent<MeshFilter>().mesh;   // get the mesh component
-        theMesh.Clear();    // delete whatever is there!!
+        theMesh.Clear();    // delete whatever is there!! @
 
         Vector3[] v = new Vector3[9];   // 2x2 mesh needs 3x3 vertices
         int[] t = new int[8*3];         // Number of triangles: 2x2 mesh and 2x triangles on each mesh-unit
