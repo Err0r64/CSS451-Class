@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "3.ComponentVsVariable.sln"
+    "dotnet.defaultSolution": "1.3.ComponentVsVariable.sln"
 }

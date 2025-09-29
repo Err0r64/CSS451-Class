@@ -51,7 +51,7 @@ public partial class MainController : MonoBehaviour {
         m.color = c;
     }
 
-    
+
     public void LayerSelectionChange(TMP_Dropdown d)
     {
         Debug.Log("Seleciton: V=" + d.value);
@@ -77,6 +77,8 @@ public partial class MainController : MonoBehaviour {
                 LayerMask = UnityEngine.LayerMask.GetMask("Plane");
                 break;
         }
+        
+        Debug.Log("Mask=" + LayerMask);
     }
 
 }
