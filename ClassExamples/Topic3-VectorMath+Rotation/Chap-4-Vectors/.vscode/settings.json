@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Chapter-4-Vectors.sln"
+    "dotnet.defaultSolution": "Chap-4-Vectors.sln"
 }
