@@ -71,7 +71,7 @@ private void Start()
        // if (v1v2Axis.magnitude < float.Epsilon)
        //   return;
 
-        #region // the details of steps, this is not done well as the follow does not
+        #region // the details of steps, 
         // if (ShowSteps)
         {
             // spilt the angle to be rotated into equal portion. The divide is non-linear
