@@ -509,9 +509,9 @@ MonoBehaviour:
   p3: {fileID: 1403744846}
   p4: {fileID: 2123252604}
   Red: {fileID: 2035964328}
-  ObjASpeed: 0.1
-  RedSpeed: 0.1
-  ProjectileSpeed: 2
+  ObjASpeed: 1
+  RedSpeed: 1.5
+  ProjectileSpeed: 3
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,0 +1,57 @@
+
+
+// 1. Continuously marching ObjA towards p2, if reach P2, start over at P1
+        Vector3 V = p2.localPosition - ObjA.localPosition; // direction vector from ObjA towards p2
+        if (V.magnitude < 0.1f)
+        {
+            ObjA.localPosition = p1.localPosition;
+            V = p2.localPosition - ObjA.localPosition; // direction vector from ObjA to p2
+        }
+        ObjA.localPosition += V.normalized * ObjASpeed * Time.smoothDeltaTime;
+    
+// 2. send the Projectile towards Red at speed ProjectileSpeed when space is pressed
+        //    projectile should start at ObjA's position and disappear when it reaches Red
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Projectile.transform.localPosition = ObjA.localPosition;
+            Projectile.SetActive(true);
+        }
+
+        if (Projectile.activeSelf)
+        {
+            Vector3 Vp = Red.localPosition - Projectile.transform.localPosition; // direction vector from Projectile towards Red
+            Projectile.transform.localPosition += Vp.normalized * ProjectileSpeed * Time.smoothDeltaTime;
+            if (Vp.magnitude < 0.1f)
+            {
+                Projectile.SetActive(false);
+            }
+        }
+
+
+// 3. March Red along the direction defined by P3 towards P4, when Red is 
+        //    farther than 10 units from p3, it should reset to p3 and repeat
+        Vector3 Vr = Red.localPosition - p3.localPosition;
+        float distance = Vr.magnitude;
+        if (distance > 10.0f)
+        {
+            Red.localPosition = p3.localPosition;
+        }
+        Vector3 Vt = p4.localPosition - p3.localPosition; // direction vector from p3 to p4
+        Vector3 Vtn = Vt.normalized;
+        Red.localPosition += Vtn * RedSpeed * Time.smoothDeltaTime;
+
+
+
+// 4. Define a SetLine function to receive three parameters
+    //       SetLine(Vector3 p1, Vector3 p2, transform CylinderTransform)
+    void SetLine(Vector3 p1, Vector3 p2, GameObject line)
+    {
+        line.SetActive(true);
+        Vector3 v = p2 - p1;
+        Vector3 vn = v.normalized;
+        float length = v.magnitude;
+        line.transform.position = p1 + length * 0.5f * vn; // or (p1 + p2) / 2;
+        line.transform.up = vn;
+        Vector3 scale = line.transform.localScale;
+        line.transform.localScale = new Vector3(scale.x, length / 2f, scale.z);
+    }
