@@ -1,0 +1,20 @@
+
+        Vector3 va = P.localPosition - CP1.transform.localPosition;
+        float d = Vector3.Dot(va, vn);  // projected size of va along the cylinder axis
+        
+        Vector3 ptOnLine = CP1.transform.localPosition + d * vn; // projection of P onto the cylinder axis line
+        Vector3 vt = P.localPosition - ptOnLine; // vector from ptOnLine to P
+        Pt.localPosition = ptOnLine + CylinderRadius * vt.normalized; // project onto cylinder surface
+
+        // 3. Update the projection line
+        Support.UpdateLine(P.localPosition, Pt.localPosition, ProjectionLine);
+        
+        if (d < 0 || d > h)
+        {
+            // P is outside the cylinder height range
+            Pt.gameObject.GetComponent<Renderer>().material.color = Color.red;
+        } else
+        {
+            // P is within the cylinder height range
+            Pt.gameObject.GetComponent<Renderer>().material.color = Color.blue;
+        }

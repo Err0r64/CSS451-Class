@@ -1,0 +1,19 @@
+// Determine if P is in front of or behind the plane
+        Vector3 v = P.localPosition - WhitePlane.localPosition;
+        float sign = Vector3.Dot(n, v);
+            // what if we used: Vector3.Dot(n, P.localPosition);??
+            // Assumption here: plane a passes through the origin
+            // Point here: very tiny mistake, NO WAY to debug,
+            //             except by looking at the equations on paper!!
+
+        // all we care about is the sign
+        if (sign > 0)
+        {
+            // P is in front of the plane
+            P.gameObject.GetComponent<Renderer>().material.color = Color.green;
+        }
+        else
+        {
+            // P is behind the plane
+            P.gameObject.GetComponent<Renderer>().material.color = Color.red;
+        }

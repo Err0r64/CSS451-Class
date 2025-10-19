@@ -1,0 +1,46 @@
+
+// This is the final solution
+        Vector3 vp2 = P2.localPosition - WhitePlane.localPosition; // plane to P2
+        float sign = Vector3.Dot(n, vp2);  // >0 means P2 in front
+
+        Vector3 v = P2.localPosition - P1.localPosition;  // P1 to P2 direction
+        Vector3 vn = v.normalized;
+
+        float denominator = Vector3.Dot(vn, n); // almost 0 means perpendicular
+
+        if ( (sign > float.Epsilon) &&          // P2 is in front, otherwise no reflection
+             (Mathf.Abs(denominator) > float.Epsilon) ) // not parallel (or vn and n not almost perpendicular)
+        {
+            P2.gameObject.GetComponent<Renderer>().material.color = Color.green;
+            float D = Vector3.Dot(n, WhitePlane.localPosition); // n . P = D
+            
+            // 1. compute Pt, the line/plane intersection point
+            float t = (D - Vector3.Dot(n, P1.localPosition)) / denominator;
+            Pt.localPosition = P1.localPosition + t * vn;  // from P1 along vn direction by distance t
+            Pt.gameObject.SetActive(true);
+
+            Vector3 reflectionDir = 2f * Vector3.Dot(vn, n) * n - vn;
+
+            float rSize = (P2.localPosition - Pt.localPosition).magnitude;
+            Support.UpdateLine(Pt.localPosition,
+                               Pt.localPosition + rSize * reflectionDir,
+                               ReflectionLine);
+            ReflectionLine.SetActive(true);
+            
+            VectorM.SetActive(ShowAllLines);
+            if (ShowAllLines) // show the m vector
+            {
+                Vector3 vt = P2.localPosition - Pt.localPosition;
+                float h = Vector3.Dot(vt, n);
+                Vector3 mpt =  Pt.localPosition + h * n;
+                Support.UpdateLine(mpt, P2.localPosition, VectorM);
+
+                NormalAtPt.SetActive(ShowAllLines);
+                Support.UpdateLine(Pt.localPosition, mpt, NormalAtPt);
+            }
+        } else
+        {
+            P2.gameObject.GetComponent<Renderer>().material.color = Color.red;
+            Pt.gameObject.SetActive(false);
+            ReflectionLine.SetActive(false);
+        }
