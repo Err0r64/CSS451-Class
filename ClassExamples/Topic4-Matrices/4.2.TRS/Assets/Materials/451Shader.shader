@@ -38,7 +38,7 @@
                 // o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);  // Camera + GameObject transform TRS
 
                 o.vertex = mul(MyXformMat, v.vertex);  // use our own transform matrix!
-                    // MUST apply before camrea!
+                    // MUST apply before the camera!
 
                 o.vertex = mul(UNITY_MATRIX_VP, o.vertex);   // camera transform only
 				
