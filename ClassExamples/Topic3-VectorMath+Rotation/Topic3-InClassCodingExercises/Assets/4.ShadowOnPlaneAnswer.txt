@@ -1,0 +1,33 @@
+
+// Compute the shadow point of P on the plane along the plane normal direction
+        // only if P is in front of the plane (n dot v > 0)       
+        Vector3 v = P.localPosition;
+        float cosAngle = Vector3.Dot(n, (P.localPosition - WhitePlane.localPosition));
+        if (cosAngle > float.Epsilon) // -ve means its behind the plane, no shadow
+        {
+            // Sets P color to green
+            P.gameObject.GetComponent<Renderer>().material.color = Color.green;
+
+            // project V vector to the plane normal
+            float h = Vector3.Dot(v, n);  // v . n
+            float D = Vector3.Dot(n, WhitePlane.localPosition); // n . P = D
+            float t = h - D;
+            Vector3 shadowPos = P.localPosition - t * n;
+            ShadowPoint.localPosition = shadowPos;
+            ShadowPoint.gameObject.SetActive(true);
+
+            LineToP.SetActive(ShowAllLines);
+            LinePtToP.SetActive(ShowAllLines);
+            if (ShowAllLines)
+            {
+                Support.UpdateLine(Vector3.zero, P.localPosition, LineToP);
+                Support.UpdateLine(shadowPos, P.localPosition, LinePtToP);
+            }
+        } else
+        {
+            P.gameObject.GetComponent<Renderer>().material.color = Color.red;
+            
+            ShadowPoint.gameObject.SetActive(false);
+            LineToP.SetActive(false);
+            LinePtToP.SetActive(false);
+        }
